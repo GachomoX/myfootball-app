@@ -1,6 +1,12 @@
-import React from 'react'
-import '../App.css'
+import React, {useState} from 'react;'
+import '../App.css';
+import Leagues from './Leagues';
+import Standings from './Standings';
+
 const Content = () => {
+    const [active, setActive] =useState(true);
+
+
   return (
     <div className ='content-container'>
         <div className='tabs'>
@@ -8,7 +14,7 @@ const Content = () => {
                 <h2>Leagues</h2>
 
             </div>
-            <div classname='tab-standings'>
+            <div className='tab-standings'>
                 <h2>Standings</h2>
             </div>
         </div>

@@ -39,16 +39,19 @@
   align-items: center;
   justify-content: center;
   background-color: #000000;
-  color: #fffff;
+  color: #ffffff;
+  height: 50px;
+  border-right: 5px solid #ccc;
 }
 
-.tab-settings{
+.tab-standings{
   width: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #000000;
-  color: #fffff;
+  color: #ffffff;
+  height: 50px;
   
 }
 
