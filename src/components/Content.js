@@ -1,4 +1,4 @@
-import React, {useState} from 'react;'
+import React, {useState} from 'react';
 import '../App.css';
 import Leagues from './Leagues';
 import Standings from './Standings';
@@ -10,17 +10,17 @@ const Content = () => {
   return (
     <div className ='content-container'>
         <div className='tabs'>
-            <div className='tab-leagues' onClick={()=>serActive(true)}>
-                <h2>Leagues</h2>
+            <div className='tab-leagues' onClick={()=>setActive(true)}>
+                <h2 style={{color: active ? '#c20114' :null }}>Leagues</h2>
 
             </div>
-            <div className='tab-standings' onClick={()=>serActive(false)}>
-                <h2>Standings</h2>
+            <div className='tab-standings' onClick={()=>setActive(false)}>
+                <h2 style={{color: !active ? '#c20114' :null }}>Standings</h2>
             </div>
 
-            {active ? <Leagues/> : <Standings/>}
+            
         </div>
-      
+        {active ? <Leagues/> : <Standings/>}
     </div>
   )
 }
