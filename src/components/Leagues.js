@@ -34,15 +34,17 @@ const Leagues = () => {
 
 
 
-  return (
-    <div className='leagues-container'>
-        {data.map(()=>(
-            <div>{data}</div>
-        ))}
-        
-      
-    </div>
-  )
+    return (
+        <div className="leagues-container">
+          {data.length > 0 && (
+            <ul>
+              {data.map(data => (
+                <li key={data.id}>{data.name}</li>
+              ))}
+            </ul>
+          )}
+        </div>
+      )
 }
 
 export default Leagues
