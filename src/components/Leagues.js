@@ -10,9 +10,12 @@ const Leagues = () => {
     const [data,setData]=useState([]);
 
     useEffect(()=>{
-        axios('https://api-football-v1.p.rapidapi.com/v3/teams/seasons').then(res=>{
+        axios('https://api-football-standings.azharimm.site/leagues').then(res=>{
             console.log(res.data);
-        })
+            setData(res.data.data);
+        }
+        
+    );
 
     },[])
 
@@ -21,7 +24,9 @@ const Leagues = () => {
 
   return (
     <div className='leagues-container'>
-        leagues
+        {data.map((data)=>{
+            <div></div>
+        })}
       
     </div>
   )
