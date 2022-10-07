@@ -19,9 +19,9 @@ const Leagues = () => {
             }
         };
         
-        fetch('https://football98.p.rapidapi.com/competitions', options)
+        fetch('https://football98.p.rapidapi.com/premierleague/fixtures', options)
             .then(response => response.json())
-            .then(response => console.log(response))
+            .then(response => console.log(response[0][" Matchday 10"]))
             .catch(err => console.error(err));
 
     },[])
