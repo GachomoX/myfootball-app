@@ -45,7 +45,7 @@ function App() {
             <AwayMatches data={data}/>
           </Route>
           <Route path="/standings">
-            <Standings />
+            <Standing />
           </Route>
         </div>
         
