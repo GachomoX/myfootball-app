@@ -3,7 +3,7 @@ import {BrowserRouter, Route} from 'react-router-dom';
 import React from 'react';
 import './App.css';
 import NavBar from './components/NavBar';
-import Footer from './components/Footer';
+//import Footer from './components/Footer';
 import Content from './components/Content';
 import Leagues from './components/Leagues';
 import Standings from './components/Standings';
@@ -23,9 +23,9 @@ function App() {
     </Switch>
     
   
-  
-    
     <Footer/>
+    
+    
      
       
     </BrowserRouter>

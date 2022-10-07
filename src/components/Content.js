@@ -3,8 +3,11 @@ import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 import '../App.css';
 
 
+
 const Content = () => {
+   
     const [active, setActive] =useState(true);
+
 
 
   return (
@@ -20,9 +23,12 @@ const Content = () => {
 
             
         </div>
+
+        
         
     </div>
   )
+  
 }
 
 export default Content
