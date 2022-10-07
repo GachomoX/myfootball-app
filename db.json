@@ -1,5 +1,11 @@
 {
-    "records":[
-        
-    ]
+  "records": [
+    {
+      "team": "Man U",
+      "played": "2",
+      "points": "3",
+      "gd": "9",
+      "id": 1
+    }
+  ]
 }
