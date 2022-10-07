@@ -17,17 +17,30 @@ const Leagues = () => {
             method: 'GET',
             headers: {
                 'X-RapidAPI-Key': '82f711ab14msh5fc9f050e3530c3p1944f6jsnc5c1a506b958',
-                'X-RapidAPI-Host': 'football-prediction-api.p.rapidapi.com'
+                'X-RapidAPI-Host': 'football98.p.rapidapi.com'
             }
         };
         
-        fetch('https://football-prediction-api.p.rapidapi.com/api/v2/get-list-of-fixture-ids', options)
+        fetch('https://football98.p.rapidapi.com/premierleague/fixtures', options)
             .then(response => response.json())
-            .then(response => setData(response))
+            .then(response => console.log(response[0][" Matchday 10 "]))
             .catch(err => console.error(err));
 
     },[])
+
     console.log(data)
+
+
+    const apiData = data.map((item, index)=> {
+        return(
+            <div key={index}>
+                
+                <img src= {item.homeLogo} alt='Homelogo' />
+                <p>Team Name:{item.homeTeam} </p>
+            </div>
+        )
+    })
+
 
     
 
@@ -36,13 +49,8 @@ const Leagues = () => {
 
     return (
         <div className="leagues-container">
-          {data.length > 0 && (
-            <ul>
-              {data.map(data => (
-                <li key={data.id}>{data.name}</li>
-              ))}
-            </ul>
-          )}
+          {apiData}
+        
         </div>
       )
 }
