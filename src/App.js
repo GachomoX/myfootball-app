@@ -14,18 +14,18 @@ function App() {
 
   useEffect(()=>{
 
-      const options = {
-          method: 'GET',
-          headers: {
-              'X-RapidAPI-Key': 'fb53448635msh2d6cdc4f7438ab5p13ac1ajsn8bfc499e951e',
-              'X-RapidAPI-Host': 'football98.p.rapidapi.com'
-          }
-      };
-      
-      fetch('https://football98.p.rapidapi.com/premierleague/fixtures', options)
-          .then(response => response.json())
-          .then(response =>setData(response[0][" Matchday 10 "]))
-          .catch(err => console.error(err));
+    const options = {
+      method: 'GET',
+      headers: {
+        'X-RapidAPI-Key': '82f711ab14msh5fc9f050e3530c3p1944f6jsnc5c1a506b958',
+        'X-RapidAPI-Host': 'football98.p.rapidapi.com'
+      }
+    };
+    
+    fetch('https://football98.p.rapidapi.com/competitions', options)
+      .then(response => response.json())
+      .then(response => setData(response[0][' matchday 10 ']))
+      .catch(err => console.error(err));
 
   },[])
 
