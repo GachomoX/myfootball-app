@@ -68,3 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### App's Features
+
+ The app is built on a free plan. Therefore, it is limited to some data contents like live scores, fixtures, tables, squads, lineups/subs, goalscores, etc.
+
+ This app displays HomeTeam and AwayTeam and a table for the standings.
+
+ ### Api used
+ The app uses free RapidAPI.
