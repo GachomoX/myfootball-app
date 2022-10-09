@@ -22,7 +22,7 @@ function App() {
           }
       };
       
-      fetch('https://football98.p.rapidapi.com/premierleague/fixtures', options)
+      fetch('', options)
           .then(response => response.json())
           .then(response =>setData(response[0][" Matchday 10 "]))
           .catch(err => console.error(err));

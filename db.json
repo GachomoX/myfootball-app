@@ -6,6 +6,34 @@
       "points": "3",
       "gd": "9",
       "id": 1
+    },
+    {
+      "team": "Arsenal",
+      "played": "4",
+      "points": "1",
+      "gd": "-9",
+      "id": 2
+    },
+    {
+      "team": "Chelsea",
+      "played": "3",
+      "points": "9",
+      "gd": "10",
+      "id": 3
+    },
+    {
+      "team": "Totenham",
+      "played": "4",
+      "points": "9",
+      "gd": "7",
+      "id": 4
+    },
+    {
+      "team": "Man C",
+      "played": "4",
+      "points": "12",
+      "gd": "12",
+      "id": 5
     }
   ]
 }
