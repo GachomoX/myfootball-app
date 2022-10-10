@@ -4,8 +4,10 @@ import React, {useEffect, useState} from 'react';
 import './App.css';
 import NavBar from './components/NavBar';
 import Leagues from './components/Leagues';
-import AwayMatches from './components/AwayMatches';
 import Standings from './components/Standings';
+import AwayMatches from './components/AwayMatches';
+
+
 
 
 function App() {
@@ -17,14 +19,14 @@ function App() {
     const options = {
       method: 'GET',
       headers: {
-        'X-RapidAPI-Key': '82f711ab14msh5fc9f050e3530c3p1944f6jsnc5c1a506b958',
+        'X-RapidAPI-Key': '9ffc9c58a0msh59f94ccf73e3603p1914d6jsn6dbda05fc175',
         'X-RapidAPI-Host': 'football98.p.rapidapi.com'
       }
     };
     
-    fetch('https://football98.p.rapidapi.com/competitions', options)
+    fetch('https://football98.p.rapidapi.com/premierleague/fixtures', options)
       .then(response => response.json())
-      .then(response => setData(response[0][' matchday 10 ']))
+      .then(response => setData(response[0][' Matchday 11 ']))
       .catch(err => console.error(err));
 
   },[])
@@ -37,17 +39,17 @@ function App() {
         <NavBar/>
       </Route> 
       <Switch>
-        <div style={{justifyContent:"center", textAlign:"center"}}>
+        
           <Route path="/homematches">
             <Leagues data={data}/>
           </Route>
           <Route path="/awaymatches">
-            <AwayMatches data={data}/>
+            <AwayMatches data={data} />
           </Route>
           <Route path="/standings">
             <Standings />
           </Route>
-        </div>
+      
         
       </Switch>
       
