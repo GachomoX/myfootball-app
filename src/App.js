@@ -26,7 +26,7 @@ function App() {
     
     fetch('https://football98.p.rapidapi.com/premierleague/fixtures', options)
       .then(response => response.json())
-      .then(response => setData(response[0][' Matchday 11 ']))
+      .then(response => setData(response[0][' Matchday 13 ']))
       .catch(err => console.error(err));
 
   },[])
